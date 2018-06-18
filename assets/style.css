@@ -1,0 +1,21 @@
+header {
+    padding:25px 0px;
+}
+
+header h3 {
+    margin-top:25px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#fileselect {
+    border:4px dashed #555;
+    padding:80px 15px;
+    text-align: center !important;
+}
+
+#image {
+    margin:20px 0px;
+}

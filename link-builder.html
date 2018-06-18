@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="assets/link-builder.js"></script>
+  <script src="assets/clipboard.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="http://placehold.it/120x65" width="120">
+        </div>
+        <div class="col-md-10">
+          <h3>Link Builder</h3>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>URL</label>
+                  <input name="url" class="form-control" type="text" value="" placeholder="URL">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Source</label>
+                  <div id="source_control">
+                    <select class="form-control" name="utm_source">
+                      <option value="facebook">Facebook</option>
+                      <option value="instagram">Instagram</option>
+                      <option value="twitter">Twitter</option>
+                      <option value="sms">SMS</option>
+                      <!-- PUT YOUR TRAFFIC SOURCES HERE -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Medium</label>
+                  <select class="form-control" name="utm_medium">
+                    <option value="post">Referral</option>
+                    <option value="cpc">CPC</option>
+                    <option value="email">Email</option>
+                    <option value="text">SMS</option>
+                    <option value="internal">Internal Site Link</option>
+                    <!-- PUT YOUR MEDIUMS HERE -->
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Campaign</label>
+                  <select class="form-control" name="utm_campaign">
+                    <!-- PUT YOUR CAMPAIGNS HERE -->
+                    <option value="campaigns">Put your Campaigns Here</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Term / Page</label>
+                  <div id="term_control">
+                    <select class="form-control" name="utm_term">
+                      <!-- PUT YOUR TERMS HERE -->
+                      <option value="terms">Put your Terms Here</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Ad Content / Post Description</label>
+                  <input name="utm_content" class="form-control" type="text" placeholder="Ad Content / Post Description">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <button id="generate_link" data-clipboard-target="#final_url" class="btn btn-primary btn-block">Generate Link</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input id="final_url" name="final_url" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
