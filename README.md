@@ -3,6 +3,6 @@ Allows users to build proper GA analytics links for proper attribution. Can be b
 
 Open to requests for various features.
 
--- Authentication
--- URL Shortening (We used to use goo.gl but they are shutting down)
--- Validation
+* Authentication
+* URL Shortening (We used to use goo.gl but they are shutting down)
+* Validation
